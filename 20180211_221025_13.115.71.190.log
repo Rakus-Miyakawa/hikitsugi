@@ -1,0 +1,213 @@
+Last login: Sun Feb 11 13:08:56 2018 from 150.246.215.201
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-ami/2017.09-release-notes/
+4 package(s) needed for security, out of 5 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@ip-172-31-25-41 ~]$ date
+Sun Feb 11 13:10:49 UTC 2018
+[ec2-user@ip-172-31-25-41 ~]$ sdu udo -su -
+[root@ip-172-31-25-41 ~]# yum install -y java-1.8.0-openjdk-devel
+Loaded plugins: priorities, update-motd, upgrade-helper
+amzn-main                                                                    | 2.1 kB  00:00:00     
+amzn-updates                                                                 | 2.5 kB  00:00:00     
+Resolving Dependencies
+--> Running transaction check
+---> Package java-1.8.0-openjdk-devel.x86_64 1:1.8.0.161-0.b14.36.amzn1 will be installed
+--> Processing Dependency: java-1.8.0-openjdk(x86-64) = 1:1.8.0.161-0.b14.36.amzn1 for package: 1:java-1.8.0-openjdk-devel-1.8.0.161-0.b14.36.amzn1.x86_64
+--> Processing Dependency: libawt_xawt.so(SUNWprivate_1.1)(64bit) for package: 1:java-1.8.0-openjdk-devel-1.8.0.161-0.b14.36.amzn1.x86_64
+--> Processing Dependency: libawt_xawt.so()(64bit) for package: 1:java-1.8.0-openjdk-devel-1.8.0.161-0.b14.36.amzn1.x86_64
+--> Running transaction check
+---> Package java-1.8.0-openjdk.x86_64 1:1.8.0.161-0.b14.36.amzn1 will be installed
+--> Processing Dependency: java-1.8.0-openjdk-headless(x86-64) = 1:1.8.0.161-0.b14.36.amzn1 for package: 1:java-1.8.0-openjdk-1.8.0.161-0.b14.36.amzn1.x86_64
+--> Running transaction check
+---> Package java-1.8.0-openjdk-headless.x86_64 1:1.8.0.161-0.b14.36.amzn1 will be installed
+amzn-main/latest/filelists_db       26% [======-                  ]  0.0 B/s | 1.5 MB  --:--:-- ETA amzn-main/latest/filelists_db                                                | 5.7 MB  00:00:00     
+amzn-updates/latest/filelists_db                                             | 3.4 MB  00:00:00     
+--> Processing Dependency: copy-jdk-configs >= 1.1-3 for package: 1:java-1.8.0-openjdk-headless-1.8.0.161-0.b14.36.amzn1.x86_64
+--> Processing Dependency: lksctp-tools(x86-64) for package: 1:java-1.8.0-openjdk-headless-1.8.0.161-0.b14.36.amzn1.x86_64
+--> Running transaction check
+---> Package copy-jdk-configs.noarch 0:1.2-1.2.amzn1 will be installed
+---> Package lksctp-tools.x86_64 0:1.0.10-7.7.amzn1 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+====================================================================================================
+ Package                         Arch       Version                          Repository        Size
+====================================================================================================
+Installing:
+ java-1.8.0-openjdk-devel        x86_64     1:1.8.0.161-0.b14.36.amzn1       amzn-updates      12 M
+Installing for dependencies:
+ copy-jdk-configs                noarch     1.2-1.2.amzn1                    amzn-main         13 k
+ java-1.8.0-openjdk              x86_64     1:1.8.0.161-0.b14.36.amzn1       amzn-updates     246 k
+ java-1.8.0-openjdk-headless     x86_64     1:1.8.0.161-0.b14.36.amzn1       amzn-updates      39 M
+ lksctp-tools                    x86_64     1.0.10-7.7.amzn1                 amzn-main         89 k
+
+Transaction Summary
+====================================================================================================
+Install  1 Package (+4 Dependent packages)
+
+Total download size: 51 M
+Installed size: 144 M
+Downloading packages:
+(1/5): copy-jdk-configs-1.2-1.2.amzn1.noarch.rpm                             |  13 kB  00:00:00     
+(2/5): java-1.8.0-openjdk-1.8.0.161-0.b14.36.amzn1.x86_64.rpm                | 246 kB  00:00:00     
+(4/5): java-1.8.0-openjdk-headless- 6% [=-                        ]  0.0 B/s | 3.5 MB  --:--:-- ETA (3/5): lksctp-tools-1.0.10-7.7.amzn1.x86_64.rpm                              |  89 kB  00:00:00     
+(5/5): java-1.8.0-openjdk-headless- 23% [=====-                   ]  10 MB/s |  12 MB  00:00:03 ETA (5/5): java-1.8.0-openjdk-headless- 36% [=========                ]  11 MB/s |  19 MB  00:00:02 ETA (4/5): java-1.8.0-openjdk-devel-1.8.0.161-0.b14.36.amzn1.x86_64.rpm          |  12 MB  00:00:01     
+(5/5): java-1.8.0-openjdk-headless- 75% [==================-      ]  13 MB/s |  39 MB  00:00:00 ETA (5/5): java-1.8.0-openjdk-headless- 86% [=====================-   ]  13 MB/s |  45 MB  00:00:00 ETA (5/5): java-1.8.0-openjdk-headless- 97% [======================== ]  14 MB/s |  50 MB  00:00:00 ETA (5/5): java-1.8.0-openjdk-headless-1.8.0.161-0.b14.36.amzn1.x86_64.rpm       |  39 MB  00:00:02     
+----------------------------------------------------------------------------------------------------
+Total                                                                19 MB/s |  51 MB  00:00:02     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : copy-jdk-configs-1.2-1.2.amzn1.noarch [                                        ] 1/5  Installing : copy-jdk-configs-1.2-1.2.amzn1.noarch [#################################       ] 1/5  Installing : copy-jdk-configs-1.2-1.2.amzn1.noarch [##################################      ] 1/5  Installing : copy-jdk-configs-1.2-1.2.amzn1.noarch [####################################### ] 1/5  Installing : copy-jdk-configs-1.2-1.2.amzn1.noarch                                            1/5 
+  Installing : lksctp-tools-1.0.10-7.7.amzn1.x86_64 [                                         ] 2/5  Installing : lksctp-tools-1.0.10-7.7.amzn1.x86_64 [########                                 ] 2/5  Installing : lksctp-tools-1.0.10-7.7.amzn1.x86_64 [############                             ] 2/5  Installing : lksctp-tools-1.0.10-7.7.amzn1.x86_64 [#################                        ] 2/5  Installing : lksctp-tools-1.0.10-7.7.amzn1.x86_64 [###################                      ] 2/5  Installing : lksctp-tools-1.0.10-7.7.amzn1.x86_64 [####################                     ] 2/5  Installing : lksctp-tools-1.0.10-7.7.amzn1.x86_64 [########################                 ] 2/5  Installing : lksctp-tools-1.0.10-7.7.amzn1.x86_64 [#############################            ] 2/5  Installing : lksctp-tools-1.0.10-7.7.amzn1.x86_64 [######################################   ] 2/5  Installing : lksctp-tools-1.0.10-7.7.amzn1.x86_64 [#######################################  ] 2/5  Installing : lksctp-tools-1.0.10-7.7.amzn1.x86_64 [######################################## ] 2/5  Installing : lksctp-tools-1.0.10-7.7.amzn1.x86_64                                             2/5 
+  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [                                       ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [#                                      ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [##                                     ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [###                                    ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [####                                   ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [#####                                  ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [######                                 ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [#######                                ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [########                               ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [#########                              ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [##########                             ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [###########                            ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [############                           ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [#############                          ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [##############                         ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [###############                        ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [################                       ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [#################                      ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [##################                     ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [###################                    ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [####################                   ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [#####################                  ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [######################                 ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [#######################                ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [########################               ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [#########################              ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [##########################             ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [###########################            ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [############################           ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [#############################          ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [##############################         ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [###############################        ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [################################       ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [#################################      ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [##################################     ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [###################################    ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [####################################   ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [#####################################  ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.16 [###################################### ] 3/5  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.161-0.b14.36.amzn1.x86_64                    3/5 
+  Installing : 1:java-1.8.0-openjdk-1.8.0.161-0.b14.3 [                                       ] 4/5  Installing : 1:java-1.8.0-openjdk-1.8.0.161-0.b14.3 [#####                                  ] 4/5  Installing : 1:java-1.8.0-openjdk-1.8.0.161-0.b14.3 [##########                             ] 4/5  Installing : 1:java-1.8.0-openjdk-1.8.0.161-0.b14.3 [################                       ] 4/5  Installing : 1:java-1.8.0-openjdk-1.8.0.161-0.b14.3 [#####################                  ] 4/5  Installing : 1:java-1.8.0-openjdk-1.8.0.161-0.b14.3 [##########################             ] 4/5  Installing : 1:java-1.8.0-openjdk-1.8.0.161-0.b14.3 [#############################          ] 4/5  Installing : 1:java-1.8.0-openjdk-1.8.0.161-0.b14.3 [###################################    ] 4/5  Installing : 1:java-1.8.0-openjdk-1.8.0.161-0.b14.3 [###################################### ] 4/5  Installing : 1:java-1.8.0-openjdk-1.8.0.161-0.b14.36.amzn1.x86_64                             4/5 
+  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [                                       ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [#                                      ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [##                                     ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [###                                    ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [####                                   ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [#####                                  ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [######                                 ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [#######                                ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [########                               ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [#########                              ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [##########                             ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [###########                            ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [############                           ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [#############                          ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [##############                         ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [###############                        ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [################                       ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [#################                      ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [##################                     ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [###################                    ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [####################                   ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [#####################                  ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [######################                 ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [#######################                ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [########################               ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [#########################              ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [##########################             ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [###########################            ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [############################           ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [#############################          ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [##############################         ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [###############################        ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [################################       ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [#################################      ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [##################################     ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [###################################    ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [####################################   ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [#####################################  ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0 [###################################### ] 5/5  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.161-0.b14.36.amzn1.x86_64                       5/5 
+  Verifying  : 1:java-1.8.0-openjdk-headless-1.8.0.161-0.b14.36.amzn1.x86_64                    1/5 
+  Verifying  : 1:java-1.8.0-openjdk-1.8.0.161-0.b14.36.amzn1.x86_64                             2/5 
+  Verifying  : 1:java-1.8.0-openjdk-devel-1.8.0.161-0.b14.36.amzn1.x86_64                       3/5 
+  Verifying  : lksctp-tools-1.0.10-7.7.amzn1.x86_64                                             4/5 
+  Verifying  : copy-jdk-configs-1.2-1.2.amzn1.noarch                                            5/5 
+
+Installed:
+  java-1.8.0-openjdk-devel.x86_64 1:1.8.0.161-0.b14.36.amzn1                                        
+
+Dependency Installed:
+  copy-jdk-configs.noarch 0:1.2-1.2.amzn1                                                           
+  java-1.8.0-openjdk.x86_64 1:1.8.0.161-0.b14.36.amzn1                                              
+  java-1.8.0-openjdk-headless.x86_64 1:1.8.0.161-0.b14.36.amzn1                                     
+  lksctp-tools.x86_64 0:1.0.10-7.7.amzn1                                                            
+
+Complete!
+[root@ip-172-31-25-41 ~]# alternatives --config java
+
+There are 2 programs which provide 'java'.
+
+  Selection    Command
+-----------------------------------------------
+*+ 1           /usr/lib/jvm/jre-1.7.0-openjdk.x86_64/bin/java
+   2           /usr/lib/jvm/jre-1.8.0-openjdk.x86_64/bin/java
+
+Enter to keep the current selection[+], or type selection number: 2
+[root@ip-172-31-25-41 ~]# java -version
+openjdk version "1.8.0_161"
+OpenJDK Runtime Environment (build 1.8.0_161-b14)
+OpenJDK 64-Bit Server VM (build 25.161-b14, mixed mode)
+[root@ip-172-31-25-41 ~]# wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jen kins.repo
+--2018-02-11 13:22:42--  http://pkg.jenkins-ci.org/redhat/jenkins.repo
+Resolving pkg.jenkins-ci.org (pkg.jenkins-ci.org)... 52.202.51.185
+Connecting to pkg.jenkins-ci.org (pkg.jenkins-ci.org)|52.202.51.185|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 71
+Saving to: e/etc/yum.repos.d/jenkins.repof
+
+/etc/yum.repos.d/jenkins   0%[                                   ]       0  --.-KB/s               /etc/yum.repos.d/jenkins 100%[==================================>]      71  --.-KB/s    in 0s      
+
+2018-02-11 13:22:43 (7.38 MB/s) - e/etc/yum.repos.d/jenkins.repof saved [71/71]
+
+[root@ip-172-31-25-41 ~]# rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+[root@ip-172-31-25-41 ~]# yum -y install jenkins
+Loaded plugins: priorities, update-motd, upgrade-helper
+amzn-main                                                                    | 2.1 kB  00:00:00     
+amzn-updates                                                                 | 2.5 kB  00:00:00     
+jenkins                                                                      | 2.9 kB  00:00:00     
+jenkins/primary_db                  0% [                          ]  0.0 B/s |    0 B  --:--:-- ETA jenkins/primary_db                  47% [===========-             ]  0.0 B/s |  51 kB  --:--:-- ETA jenkins/primary_db                                                           | 107 kB  00:00:00     
+Resolving Dependencies
+--> Running transaction check
+---> Package jenkins.noarch 0:2.105-1.1 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+====================================================================================================
+ Package                Arch                  Version                  Repository              Size
+====================================================================================================
+Installing:
+ jenkins                noarch                2.105-1.1                jenkins                 71 M
+
+Transaction Summary
+====================================================================================================
+Install  1 Package
+
+Total download size: 71 M
+Installed size: 71 M
+Downloading packages:
+jenkins-2.105-1.1.noarch.rpm        0% [                          ]  0.0 B/s |    0 B  --:--:-- ETA jenkins-2.105-1.1.noarch.rpm        0% [                          ]  0.0 B/s | 107 kB  --:--:-- ETA jenkins-2.105-1.1.noarch.rpm        1% [                          ] 842 kB/s | 842 kB  00:01:25 ETA jenkins-2.105-1.1.noarch.rpm        3% [-                         ] 1.1 MB/s | 2.4 MB  00:01:04 ETA jenkins-2.105-1.1.noarch.rpm        5% [=                         ] 1.2 MB/s | 3.6 MB  00:00:55 ETA jenkins-2.105-1.1.noarch.rpm        6% [=-                        ] 1.4 MB/s | 4.9 MB  00:00:47 ETA jenkins-2.105-1.1.noarch.rpm        8% [==                        ] 1.5 MB/s | 5.7 MB  00:00:44 ETA jenkins-2.105-1.1.noarch.rpm        9% [==-                       ] 1.6 MB/s | 7.1 MB  00:00:39 ETA jenkins-2.105-1.1.noarch.rpm        11% [==-                      ] 1.7 MB/s | 8.0 MB  00:00:36 ETA jenkins-2.105-1.1.noarch.rpm        12% [===                      ] 1.8 MB/s | 9.1 MB  00:00:34 ETA jenkins-2.105-1.1.noarch.rpm        15% [===-                     ] 2.0 MB/s |  11 MB  00:00:29 ETA jenkins-2.105-1.1.noarch.rpm        17% [====                     ] 2.2 MB/s |  12 MB  00:00:27 ETA jenkins-2.105-1.1.noarch.rpm        19% [====-                    ] 2.3 MB/s |  14 MB  00:00:24 ETA jenkins-2.105-1.1.noarch.rpm        22% [=====-                   ] 2.6 MB/s |  16 MB  00:00:20 ETA jenkins-2.105-1.1.noarch.rpm        25% [======                   ] 2.9 MB/s |  18 MB  00:00:18 ETA jenkins-2.105-1.1.noarch.rpm        28% [=======                  ] 3.1 MB/s |  20 MB  00:00:16 ETA jenkins-2.105-1.1.noarch.rpm        31% [=======-                 ] 3.4 MB/s |  23 MB  00:00:14 ETA jenkins-2.105-1.1.noarch.rpm        35% [========-                ] 3.6 MB/s |  25 MB  00:00:12 ETA jenkins-2.105-1.1.noarch.rpm        37% [=========                ] 3.7 MB/s |  26 MB  00:00:11 ETA jenkins-2.105-1.1.noarch.rpm        39% [=========-               ] 3.7 MB/s |  28 MB  00:00:11 ETA jenkins-2.105-1.1.noarch.rpm        41% [==========               ] 3.8 MB/s |  29 MB  00:00:11 ETA jenkins-2.105-1.1.noarch.rpm        43% [==========-              ] 3.9 MB/s |  31 MB  00:00:10 ETA jenkins-2.105-1.1.noarch.rpm        45% [===========              ] 3.9 MB/s |  32 MB  00:00:09 ETA jenkins-2.105-1.1.noarch.rpm        47% [===========-             ] 3.9 MB/s |  34 MB  00:00:09 ETA jenkins-2.105-1.1.noarch.rpm        50% [============-            ] 4.1 MB/s |  36 MB  00:00:08 ETA jenkins-2.105-1.1.noarch.rpm        53% [=============            ] 4.2 MB/s |  38 MB  00:00:07 ETA jenkins-2.105-1.1.noarch.rpm        56% [==============           ] 4.3 MB/s |  40 MB  00:00:07 ETA jenkins-2.105-1.1.noarch.rpm        58% [==============-          ] 4.4 MB/s |  42 MB  00:00:06 ETA jenkins-2.105-1.1.noarch.rpm        62% [===============-         ] 4.7 MB/s |  45 MB  00:00:05 ETA jenkins-2.105-1.1.noarch.rpm        66% [================-        ] 5.0 MB/s |  47 MB  00:00:04 ETA jenkins-2.105-1.1.noarch.rpm        70% [=================-       ] 5.2 MB/s |  50 MB  00:00:03 ETA jenkins-2.105-1.1.noarch.rpm        74% [==================-      ] 5.5 MB/s |  53 MB  00:00:03 ETA jenkins-2.105-1.1.noarch.rpm        80% [====================     ] 5.9 MB/s |  57 MB  00:00:02 ETA jenkins-2.105-1.1.noarch.rpm        85% [=====================    ] 6.2 MB/s |  60 MB  00:00:01 ETA jenkins-2.105-1.1.noarch.rpm        89% [======================   ] 6.4 MB/s |  64 MB  00:00:01 ETA jenkins-2.105-1.1.noarch.rpm        93% [=======================  ] 6.6 MB/s |  67 MB  00:00:00 ETA jenkins-2.105-1.1.noarch.rpm        98% [========================-] 6.9 MB/s |  70 MB  00:00:00 ETA jenkins-2.105-1.1.noarch.rpm                                                 |  71 MB  00:00:13     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : jenkins-2.105-1.1.noarch [                                                     ] 1/1  Installing : jenkins-2.105-1.1.noarch [#                                                    ] 1/1  Installing : jenkins-2.105-1.1.noarch [##                                                   ] 1/1  Installing : jenkins-2.105-1.1.noarch [###                                                  ] 1/1  Installing : jenkins-2.105-1.1.noarch [####                                                 ] 1/1  Installing : jenkins-2.105-1.1.noarch [#####                                                ] 1/1  Installing : jenkins-2.105-1.1.noarch [######                                               ] 1/1  Installing : jenkins-2.105-1.1.noarch [#######                                              ] 1/1  Installing : jenkins-2.105-1.1.noarch [########                                             ] 1/1  Installing : jenkins-2.105-1.1.noarch [#########                                            ] 1/1  Installing : jenkins-2.105-1.1.noarch [##########                                           ] 1/1  Installing : jenkins-2.105-1.1.noarch [###########                                          ] 1/1  Installing : jenkins-2.105-1.1.noarch [############                                         ] 1/1  Installing : jenkins-2.105-1.1.noarch [#############                                        ] 1/1  Installing : jenkins-2.105-1.1.noarch [##############                                       ] 1/1  Installing : jenkins-2.105-1.1.noarch [###############                                      ] 1/1  Installing : jenkins-2.105-1.1.noarch [################                                     ] 1/1  Installing : jenkins-2.105-1.1.noarch [#################                                    ] 1/1  Installing : jenkins-2.105-1.1.noarch [##################                                   ] 1/1  Installing : jenkins-2.105-1.1.noarch [###################                                  ] 1/1  Installing : jenkins-2.105-1.1.noarch [####################                                 ] 1/1  Installing : jenkins-2.105-1.1.noarch [#####################                                ] 1/1  Installing : jenkins-2.105-1.1.noarch [######################                               ] 1/1  Installing : jenkins-2.105-1.1.noarch [#######################                              ] 1/1  Installing : jenkins-2.105-1.1.noarch [########################                             ] 1/1  Installing : jenkins-2.105-1.1.noarch [#########################                            ] 1/1  Installing : jenkins-2.105-1.1.noarch [##########################                           ] 1/1  Installing : jenkins-2.105-1.1.noarch [###########################                          ] 1/1  Installing : jenkins-2.105-1.1.noarch [############################                         ] 1/1  Installing : jenkins-2.105-1.1.noarch [#############################                        ] 1/1  Installing : jenkins-2.105-1.1.noarch [##############################                       ] 1/1  Installing : jenkins-2.105-1.1.noarch [###############################                      ] 1/1  Installing : jenkins-2.105-1.1.noarch [################################                     ] 1/1  Installing : jenkins-2.105-1.1.noarch [#################################                    ] 1/1  Installing : jenkins-2.105-1.1.noarch [##################################                   ] 1/1  Installing : jenkins-2.105-1.1.noarch [###################################                  ] 1/1  Installing : jenkins-2.105-1.1.noarch [####################################                 ] 1/1  Installing : jenkins-2.105-1.1.noarch [#####################################                ] 1/1  Installing : jenkins-2.105-1.1.noarch [######################################               ] 1/1  Installing : jenkins-2.105-1.1.noarch [#######################################              ] 1/1  Installing : jenkins-2.105-1.1.noarch [########################################             ] 1/1  Installing : jenkins-2.105-1.1.noarch [#########################################            ] 1/1  Installing : jenkins-2.105-1.1.noarch [##########################################           ] 1/1  Installing : jenkins-2.105-1.1.noarch [###########################################          ] 1/1  Installing : jenkins-2.105-1.1.noarch [############################################         ] 1/1  Installing : jenkins-2.105-1.1.noarch [#############################################        ] 1/1  Installing : jenkins-2.105-1.1.noarch [##############################################       ] 1/1  Installing : jenkins-2.105-1.1.noarch [###############################################      ] 1/1  Installing : jenkins-2.105-1.1.noarch [################################################     ] 1/1  Installing : jenkins-2.105-1.1.noarch [#################################################    ] 1/1  Installing : jenkins-2.105-1.1.noarch [##################################################   ] 1/1  Installing : jenkins-2.105-1.1.noarch [###################################################  ] 1/1  Installing : jenkins-2.105-1.1.noarch [#################################################### ] 1/1  Installing : jenkins-2.105-1.1.noarch                                                         1/1 
+  Verifying  : jenkins-2.105-1.1.noarch                                                         1/1 
+
+Installed:
+  jenkins.noarch 0:2.105-1.1                                                                        
+
+Complete!
+[root@ip-172-31-25-41 ~]# service jenkins start
+Starting Jenkins [  OK  ]
+[root@ip-172-31-25-41 ~]# less /var/lib/jenkins/secrets/initialAdminPassword
+1e1e10cb6aef47daa04519907a4675c2
+/var/lib/jenkins/secrets/initialAdminPassword (END) [root@ip-172-31-25-41 ~]# chkconfig jenkins on
+[root@ip-172-31-25-41 ~]# chkconfig --list jenkins
+jenkins        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+[root@ip-172-31-25-41 ~]# cd /root/ /root/ /root/c /root/a /root/t /root/ /root//root/.
+./             .bash_logout   .bashrc        .pki/          .tcshrc        
+../            .bash_profile  .cshrc         .ssh/          
+[root@ip-172-31-25-41 ~]# cat /root/.
+./             .bash_logout   .bashrc        .pki/          .tcshrc        
+../            .bash_profile  .cshrc         .ssh/          
+[root@ip-172-31-25-41 ~]# cat /root/.[root@ip-172-31-25-41 ~]# echo Hello,Jenkins. > /root/Hello.txt
+[root@ip-172-31-25-41 ~]# ll
+total 4
+-rw-r--r-- 1 root root 15 Feb 11 13:58 Hello.txt
+[root@ip-172-31-25-41 ~]# cat /root/Hello.txt
+Hello,Jenkins.
+[root@ip-172-31-25-41 ~]# rm -f /root/Hello.txt
+[root@ip-172-31-25-41 ~]# ll
+total 0
+[root@ip-172-31-25-41 ~]# ll /home/hec2-user/.
+./             .bash_history  .bash_profile  .ssh/          
+../            .bash_logout   .bashrc        
+[root@ip-172-31-25-41 ~]# ll /home/ec2-user/.
+./             .bash_history  .bash_profile  .ssh/          
+../            .bash_logout   .bashrc        
+[root@ip-172-31-25-41 ~]# ll /home/ec2-user/.find //ll /
+.autofsck     cgroup/       lib/          media/        root/         srv/          var/
+.autorelabel  dev/          lib64/        mnt/          run/          sys/          
+bin/          etc/          local/        opt/          sbin/         tmp/          
+boot/         home/         lost+found/   proc/         selinux/      usr/          
+[root@ip-172-31-25-41 ~]# ll /usr/jhome/hjec2-user/
+total 0
+[root@ip-172-31-25-41 ~]# exit
+logout
+[ec2-user@ip-172-31-25-41 ~]$ [ec2-user@ip-172-31-25-41 ~]$ su do suy  -
+Last login: Sun Feb 11 13:13:12 UTC 2018 on pts/0
+[root@ip-172-31-25-41 ~]# ll
+total 0
+[root@ip-172-31-25-41 ~]# exit
+logout
+[ec2-user@ip-172-31-25-41 ~]$ sudo su ^-0-
+Last login: Sun Feb 11 14:02:27 UTC 2018 on pts/0
+[root@ip-172-31-25-41 ~]# ll /home/ec2-user/.mkdir /home/jenkins/ /home/jenkins/mkdir -m 777 /home/jenkins/
+[root@ip-172-31-25-41 ~]# ll /hjomeome/
+total 8
+drwx------ 3 ec2-user ec2-user 4096 Feb 11 13:08 ec2-user
+drwxrwxrwx 2 root     root     4096 Feb 11 14:07 jenkins
+[root@ip-172-31-25-41 ~]# cd /home/jenkins/
+[root@ip-172-31-25-41 jenkins]# ll
+total 4
+-rw-r--r-- 1 jenkins jenkins 15 Feb 11 14:08 Hello.txt
+[root@ip-172-31-25-41 jenkins]# ll
+total 0
+[root@ip-172-31-25-41 jenkins]# exity
+logout
+[ec2-user@ip-172-31-25-41 ~]$ exit
+logout
