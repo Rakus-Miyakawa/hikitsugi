@@ -1,11 +1,15 @@
 #!/bin/bash
 
-packer validate ${WORKSPACE}/hikitsugi-2/packer/template/hikitsugi2_packer.json
+packer validate /var/lib/jenkins/workspace/Running_Packer/hikitsugi-2/packer/template/hikitsugi2_packer.json
 
-status=`echo $?`
+STATUS=`echo $?`
 
-if [ ${status} = 0 ]; then
+if [ ${STATUS} = 0 ];then
 
-    packer build ${WORKSPACE}/hikitsugi-2/packer/template/hikitsugi2_packer.json
+    packer build /var/lib/jenkins/workspace/Running_Packer/hikitsugi-2/packer/template/hikitsugi2_packer.json
+
+else
+
+    exit 1
 
 fi
