@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -xe
 
 packer validate /var/lib/jenkins/workspace/Running_Packer/hikitsugi-2/packer/template/hikitsugi2_packer.json
 
